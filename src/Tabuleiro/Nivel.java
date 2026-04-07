@@ -1,4 +1,4 @@
-package mapa;
+package Tabuleiro;
 
 public class Nivel {
     protected int nivel = 1;
