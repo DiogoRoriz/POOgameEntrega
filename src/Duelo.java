@@ -1,3 +1,5 @@
+import Personagem.Usuarios.Heroi;
+import Personagem.inimigos.inimigos;
 import Personagem.personagem;
 import EnumTipos.TipoDeRaca;
 import java.util.Random;
@@ -6,11 +8,11 @@ public class Duelo {
 
     public static void main(String[] args) {
         // Criando os personagens
-        personagem jogador = new personagem("Arthur", TipoDeRaca.HUMANO, 20, 10, 5);
-        personagem inimigo = new personagem("Judas", TipoDeRaca.ONI, 15, 10, 3);
+        Heroi heroi = new Heroi();
+        inimigos inimigo = new inimigos();
 
         // Chamando o duelo
-        iniciarDuelo(jogador, inimigo);
+        iniciarDuelo(heroi, inimigo);
     }
 
     public static void iniciarDuelo(personagem p1, personagem p2) {
@@ -36,6 +38,8 @@ public class Duelo {
 
         if (p1.getVida() > 0) {
             System.out.println("Vitória de " + p1.getNome() + "!");
+            personagem personagem = new personagem();
+            personagem.Morte();
         } else {
             System.out.println("Vitória de " + p2.getNome() + "!");
         }

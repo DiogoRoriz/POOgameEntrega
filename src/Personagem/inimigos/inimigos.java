@@ -2,15 +2,18 @@ package Personagem.inimigos;
 
 import EnumTipos.TipoDeRaca;
 import Personagem.personagem;
-import interfaces.*;
 
 public class inimigos extends personagem {
 
-    personagem Inimigo = new personagem("judas", EnumTipos.TipoDeRaca.ONI,5,10,1);
+    personagem Inimigo;
 
-    @Override
-    public void Atacar() {
 
-        super.Atacar();
+    public inimigos(String nome, TipoDeRaca tipoDeRaca, int vida, int estamina, int forca, personagem inimigo) {
+        super("judas", EnumTipos.TipoDeRaca.ONI,5,10,1);
+        Inimigo = inimigo;
+    }
+
+    public inimigos() {
+        Inimigo = inimigo;
     }
 }
