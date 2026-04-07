@@ -14,6 +14,7 @@ public class inimigos extends personagem {
     }
 
     public inimigos() {
+        personagem inimigo = null;
         Inimigo = inimigo;
     }
 }
