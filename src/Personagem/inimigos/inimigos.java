@@ -1,33 +1,16 @@
 package Personagem.inimigos;
 
+import EnumTipos.TipoDeRaca;
+import Personagem.personagem;
 import interfaces.*;
 
-public class inimigos implements serVivo, interativos {
+public class inimigos extends personagem {
 
-
-    @Override
-    public void Vida() {
-
-    }
-
-    @Override
-    public void Morte() {
-
-    }
+    personagem Inimigo = new personagem("judas", EnumTipos.TipoDeRaca.ONI,5,10,1);
 
     @Override
     public void Atacar() {
 
+        super.Atacar();
     }
-
-    @Override
-    public void Descancar() {
-
-    }
-
-    @Override
-    public void Comer() {
-
-    }
-
 }

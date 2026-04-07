@@ -1,8 +1,11 @@
 package interfaces;
 
+import Personagem.personagem;
+
 public interface interativos {
-    void Vida();
-    void Morte();
-    void drop();
-    void atividadeDoInterativo();
+
+     void AtivarInterativo(personagem personagem);
+
+    void Drop();
+    void AtividadeDoInterativo();
 }
