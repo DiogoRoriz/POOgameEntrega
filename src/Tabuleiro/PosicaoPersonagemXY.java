@@ -1,12 +1,12 @@
 package Tabuleiro;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class PosicaoPersonagemXY<T>{
     public int [][] posicaoXY;
     public int posicao = 0;
-    List<T> AdicionarPosicaoXY;
+    List<T> ListAdicionarPersonagemXY;
+    List<T> AdicionarnaposicaoXY;
 
     public int[][] getPosicaoXY() {
         return posicaoXY;
@@ -17,7 +17,7 @@ public class PosicaoPersonagemXY<T>{
     }
 
     public PosicaoPersonagemXY() {
-        this.AdicionarPosicaoXY  = new ArrayList<>();
+        this.ListAdicionarPersonagemXY = new ArrayList<>();
     }
     public PosicaoPersonagemXY(int[][] posicao) {
         this.posicaoXY = posicao;
@@ -27,15 +27,22 @@ public class PosicaoPersonagemXY<T>{
         posicao++;
     }
 
-    public void adicionarXY(T posicaoXY){
-          AdicionarPosicaoXY.add(posicaoXY);
+    public void AdicionarPersonagem(T personagem){
+          ListAdicionarPersonagemXY.add(personagem);
       }
-    private  void mostrarXY() {
+public  void mostrarPersonagem(){
+        for(T personagem : ListAdicionarPersonagemXY ){
+            System.out.println(personagem);
+        }
+}
+
+
+
+    public   void mostrarXY() {
           for (int[] coordenada : posicaoXY){
-              for (T posicoesXY : AdicionarPosicaoXY){
+              for (T posicoesXY : ListAdicionarPersonagemXY){
                   System.out.println(posicoesXY);
               }
           }
       }
-
 }

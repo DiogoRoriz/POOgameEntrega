@@ -1,3 +1,4 @@
+/*
 import Personagem.Usuarios.Heroi;
 import Personagem.inimigos.inimigos;
 import Personagem.personagem;
@@ -6,7 +7,7 @@ import java.util.Random;
 
 public class Duelo {
 
-    public static void main(String[] args) {
+     {
         // Criando os personagens
         Heroi heroi = new Heroi();
         inimigos inimigo = new inimigos();
@@ -45,3 +46,5 @@ public class Duelo {
         }
     }
 }
+
+ */
